@@ -1,0 +1,4 @@
+// File: all_src_files/globals.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
