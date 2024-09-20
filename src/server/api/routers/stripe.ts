@@ -1,6 +1,7 @@
-import { env } from "~/env.mjs";
-import { getOrCreateStripeCustomerIdForUser } from "~/server/stripe/stripe-webhook-handlers";
-import { createTRPCRouter, protectedProcedure } from "~/server/api/trpc";
+// File: src/server/api/routers/stripe.ts
+import { env } from "src/env.mjs";
+import { getOrCreateStripeCustomerIdForUser } from "src/server/stripe/stripe-webhook-handlers";
+import { createTRPCRouter, protectedProcedure } from "src/server/api/trpc";
 
 export const stripeRouter = createTRPCRouter({
   createCheckoutSession: protectedProcedure.mutation(async ({ ctx }) => {

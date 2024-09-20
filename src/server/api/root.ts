@@ -1,4 +1,5 @@
-import { createTRPCRouter } from "~/server/api/trpc";
+// File: src/server/api/root.ts
+import { createTRPCRouter } from "src/server/api/trpc";
 import { stripeRouter } from "./routers/stripe";
 import { userRouter } from "./routers/user";
 

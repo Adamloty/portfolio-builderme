@@ -1,10 +1,11 @@
+// File: src/pages/dashboard.tsx
 import type { GetServerSideProps, NextPage } from "next";
 import { getServerSession } from "next-auth";
 import { signOut } from "next-auth/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { api } from "~/utils/api";
-import { authOptions } from "~/server/auth";
+import { api } from "src/utils/api";
+import { authOptions } from "src/server/auth";
 
 const SignoutButton = () => {
   return (

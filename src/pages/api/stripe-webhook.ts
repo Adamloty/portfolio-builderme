@@ -1,6 +1,7 @@
+// File: src/pages/api/stripe-webhook.ts
 import type { NextApiRequest, NextApiResponse } from "next";
-import { env } from "~/env.mjs";
-import { prisma } from "~/server/db";
+import { env } from "src/env.mjs";
+import { prisma } from "src/server/db";
 import type Stripe from "stripe";
 import { buffer } from "micro";
 import {

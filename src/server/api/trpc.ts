@@ -1,3 +1,4 @@
+// File: src/server/api/trpc.ts
 /**
  * YOU PROBABLY DON'T NEED TO EDIT THIS FILE, UNLESS:
  * 1. You want to modify request context (see Part 1).
@@ -17,9 +18,9 @@
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 import { type Session } from "next-auth";
 
-import { getServerAuthSession } from "~/server/auth";
-import { prisma } from "~/server/db";
-import { stripe } from "~/server/stripe/client";
+import { getServerAuthSession } from "src/server/auth";
+import { prisma } from "src/server/db";
+import { stripe } from "src/server/stripe/client";
 
 type CreateContextOptions = {
   session: Session | null;

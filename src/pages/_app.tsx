@@ -1,8 +1,9 @@
+// File: src/pages/_app.tsx
 import { type AppType } from "next/app";
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 
-import { api } from "~/utils/api";
+import { api } from "src/utils/api";
 
 import "~/styles/globals.css";
 
