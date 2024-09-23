@@ -9,6 +9,8 @@
 # testing
 /coverage
 
+/ABFiles/*
+
 # database
 /prisma/db.sqlite
 /prisma/db.sqlite-journal

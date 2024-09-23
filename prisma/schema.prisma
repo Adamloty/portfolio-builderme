@@ -1,3 +1,4 @@
+// File: prisma/schema.prisma
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
@@ -53,11 +54,14 @@ model User {
     email                    String?                   @unique
     emailVerified            DateTime?
     image                    String?
+    password                 String
     accounts                 Account[]
     sessions                 Session[]
     stripeCustomerId         String?
     stripeSubscriptionId     String?
     stripeSubscriptionStatus StripeSubscriptionStatus?
+    googleId                 String?                   @unique
+    googleProfileId          String?
 }
 
 enum StripeSubscriptionStatus {
